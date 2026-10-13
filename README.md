@@ -1,29 +1,40 @@
 # Portfólio — Victor Trindade Santos
 
-Site estático responsivo para hospedagem no GitHub Pages. Construído com HTML semântico, CSS e JavaScript puro; o fundo animado utiliza Canvas 2D e caracteres ASCII, sem dependência de Three.js.
+Portfólio profissional desenvolvido para apresentar a trajetória acadêmica, as experiências profissionais e os projetos de desenvolvimento de software de Victor Trindade Santos. O site reúne informações sobre sua formação, competências técnicas e contribuições em projetos, permitindo uma visão geral de seu perfil como desenvolvedor.
 
-## Arquivos
-- `index.html`: conteúdo, navegação, currículo e cards dos projetos.
-- `styles.css`: identidade visual monocromática, bordas ASCII e responsividade.
-- `script.js`: animação do canvas e modais de detalhes dos projetos.
+## Funcionalidades
 
-## Visualizar localmente
-Abra `index.html` no navegador. Para uma experiência mais consistente, use uma extensão de servidor local (por exemplo, Live Server no VS Code).
+- **Apresentação profissional:** resumo do perfil, formação acadêmica e experiência profissional.
+- **Projetos:** cards com informações sobre os projetos desenvolvidos, suas tecnologias e contribuições individuais.
+- **Detalhes dos projetos:** janelas modais com informações complementares sobre cada projeto.
+- **Navegação intuitiva:** organização do conteúdo em seções para facilitar o acesso às informações.
+- **Design responsivo:** interface adaptável a diferentes tamanhos de tela.
+- **Animação visual:** plano de fundo animado com caracteres ASCII, renderizado por meio do Canvas 2D.
+- **Acessibilidade:** navegação por teclado, indicadores visíveis de foco e respeito à preferência do usuário por movimento reduzido.
 
-## Publicar no GitHub Pages
-1. Crie um repositório no GitHub, por exemplo `portfolio`.
-2. Envie `index.html`, `styles.css`, `script.js` e este README para a raiz do repositório.
-3. No repositório, abra **Settings → Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**, escolha `main` e a pasta `/ (root)`, e salve.
-5. Aguarde a publicação e abra a URL exibida pelo GitHub Pages.
+## Tecnologias utilizadas
 
-## Antes da entrega acadêmica
-- Troque o placeholder ASCII pela fotografia real.
-- O nível de inglês informado é B2.
-- Substitua os placeholders de screenshot por capturas reais. O JavaScript tem `imagePaths` em cada projeto para apontar a imagens locais, por exemplo `assets/legato-home.png`; crie a pasta `assets` e ajuste os caminhos.
-- Revise as descrições das participações individuais e confirme as tecnologias efetivamente utilizadas em cada projeto.
-- Os cursos de extensão foram omitidos porque não havia informações suficientes para apresentá-los corretamente.
-- Revise as datas e a descrição profissional antes da publicação.
+- **HTML5:** estruturação semântica e organização do conteúdo.
+- **CSS3:** identidade visual, layout, efeitos gráficos e responsividade.
+- **JavaScript:** interações da interface, modais e animação do plano de fundo.
+- **Canvas 2D:** renderização da animação com caracteres ASCII.
 
-## Acessibilidade e movimento
-O modal usa o elemento nativo `<dialog>`, os controles têm foco visível e a animação respeita `prefers-reduced-motion`.
+O projeto utiliza JavaScript puro, sem frameworks ou dependências externas para a interface e a animação.
+
+## Estrutura do projeto
+
+- `index.html`: estrutura da página, seções de conteúdo, navegação e apresentação dos projetos.
+- `styles.css`: estilos visuais, layout responsivo, componentes e efeitos gráficos.
+- `script.js`: lógica das interações, gerenciamento dos modais e animação do Canvas 2D.
+
+## Execução
+
+Por ser um site estático, o projeto pode ser executado diretamente em um navegador ou por meio de um servidor HTTP local.
+
+## Publicação
+
+O projeto é compatível com o GitHub Pages, serviço de hospedagem de sites estáticos integrado ao GitHub.
+
+## Objetivo
+
+Centralizar a apresentação do perfil acadêmico e profissional, demonstrar conhecimentos em desenvolvimento web e facilitar o acesso aos projetos, repositórios e demais informações relevantes da trajetória do desenvolvedor.
