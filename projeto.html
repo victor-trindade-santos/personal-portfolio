@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+
+  <meta
+    name="description"
+    content="Detalhes, tecnologias, imagens e contribuições em projetos acadêmicos de Victor Trindade Santos."
+  >
+
+  <title>Projeto | Victor Trindade Santos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <canvas id="ascii-canvas" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header ascii-frame">
+    <a
+      class="brand"
+      href="index.html#top"
+      aria-label="Voltar ao início"
+    >
+      VTS<span>_</span>
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <a href="index.html#sobre">[ sobre ]</a>
+      <a href="index.html#experiencia">[ experiência ]</a>
+      <a href="index.html#formacao">[ formação ]</a>
+      <a href="index.html#projetos">[ projetos ]</a>
+    </nav>
+
+    <a
+      class="github-link"
+      href="https://github.com/victor-trindade-santos"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GITHUB ↗
+    </a>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="main">
+    <section class="section-shell project-detail">
+
+      <div class="project-top-navigation">
+        <a class="button back-button" href="index.html#projetos">
+          [ ← VOLTAR AOS PROJETOS ]
+        </a>
+      </div>
+      <p></p>
+      <!-- APRESENTAÇÃO -->
+      <div class="section-heading">
+        <span class="section-number">PRJ</span>
+        <h2 id="project-semester">CARREGANDO...</h2>
+        <span class="heading-rule"></span>
+        <span class="section-code">PROJECT.DETAIL</span>
+      </div>
+
+      <article class="ascii-frame project-overview">
+        <p class="panel-kicker" id="project-code">
+          PROJECT / 000
+        </p>
+
+        <h1 id="project-title">Carregando projeto...</h1>
+        <br></br>
+        <p
+          id="project-description"
+          class="section-intro"
+        ></p>
+
+        <div
+          id="project-tags"
+          class="tag-row"
+          aria-label="Tecnologias do projeto"
+        ></div>
+
+        <!-- LINKS PARA REPOSITÓRIOS E APLICAÇÃO PUBLICADA -->
+        <div class="project-links">
+
+          <div
+            id="project-repositories"
+            class="project-repositories"
+          ></div>
+
+          <!-- Compatibilidade com o projeto.js atual -->
+          <a
+            id="project-repository"
+            class="button"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            [ VER CÓDIGO NO GITHUB ↗ ]
+          </a>
+
+          <!-- O JavaScript exibe este botão apenas quando há URL -->
+          <a
+            id="project-live"
+            class="button project-live-button"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            hidden
+          >
+            [ ACESSAR PROJETO ONLINE ↗ ]
+          </a>
+
+        </div>
+      </article>
+
+      <!-- SOBRE O PROJETO -->
+      <section class="project-section">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <h2>SOBRE O PROJETO</h2>
+          <span class="heading-rule"></span>
+          <span class="section-code">OVERVIEW.TXT</span>
+        </div>
+
+        <article class="ascii-frame info-panel">
+          <p id="project-details"></p>
+        </article>
+      </section>
+
+      <!-- GALERIA -->
+      <section class="project-section">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <h2>VISUALIZAÇÃO DO PROJETO</h2>
+          <span class="heading-rule"></span>
+          <span class="section-code">SCREENSHOTS</span>
+        </div>
+
+        <p class="section-intro">
+          Capturas de tela da aplicação e de suas principais interfaces.
+        </p>
+
+        <div
+          id="project-gallery"
+          class="project-gallery"
+        ></div>
+
+        <p id="gallery-empty" class="muted" hidden>
+          Não foi possível carregar as imagens deste projeto.
+          Confira os caminhos dos arquivos na pasta images/.
+        </p>
+      </section>
+
+      <!-- FUNCIONALIDADES -->
+      <section
+        class="project-section"
+        id="project-features-section"
+      >
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <h2>FUNCIONALIDADES PRINCIPAIS</h2>
+          <span class="heading-rule"></span>
+          <span class="section-code">FEATURES.LIST</span>
+        </div>
+
+        <article class="ascii-frame info-panel">
+          <ul id="project-features"></ul>
+        </article>
+      </section>
+
+      <!-- ARQUITETURA E TECNOLOGIAS -->
+      <section class="project-section">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <h2>ARQUITETURA E TECNOLOGIAS</h2>
+          <span class="heading-rule"></span>
+          <span class="section-code">TECHNICAL.INFO</span>
+        </div>
+
+        <article class="ascii-frame info-panel">
+          <p id="project-architecture"></p>
+
+          <h3>Tecnologias do projeto</h3>
+
+          <div
+            id="project-tags"
+            class="tag-row"
+            aria-label="Tecnologias utilizadas"
+          ></div>
+
+          <ul id="project-technologies"></ul>
+        </article>
+      </section>
+
+      
+
+      <!-- CONTRIBUIÇÃO INDIVIDUAL -->
+      <section class="project-section">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <h2>MINHA PARTICIPAÇÃO</h2>
+          <span class="heading-rule"></span>
+          <span class="section-code">CONTRIBUTIONS.LOG</span>
+        </div>
+
+        <article class="ascii-frame info-panel">
+          <p id="project-contribution"></p>
+
+          <h3>
+            Ferramentas e tecnologias utilizadas na minha participação
+          </h3>
+
+          <div
+            id="contribution-tags"
+            class="tag-row"
+          ></div>
+        </article>
+      </section>
+
+      <!-- NAVEGAÇÃO INFERIOR -->
+      <div class="project-bottom-navigation">
+        <a class="button" href="index.html#projetos">
+          [ ← TODOS OS PROJETOS ]
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer ascii-frame">
+    <p>+--------------------------------------------------------------+</p>
+
+    <p>DESIGNED & BUILT BY VICTOR TRINDADE SANTOS</p>
+
+    <p>
+      <a
+        href="https://github.com/victor-trindade-santos"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GITHUB ↗
+      </a>
+    </p>
+
+    <p class="muted">
+      © 2026 // PORTFÓLIO ACADÊMICO & PROFISSIONAL
+    </p>
+
+    <p>+--------------------------------------------------------------+</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="projeto.js"></script>
+</body>
+
+</html>
